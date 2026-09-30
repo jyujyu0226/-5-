@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 첫 웹페이지</title>
+    <style>
+      /* id 선택자(#)로 스타일 지정 */
+      #main-title {
+        text-align: center;
+        color: #2c3e50;
+      }
+
+      #border-solid  { border: 1px solid;  background-color: #ffeaea; padding: 4px 12px; margin-bottom: 8px; }
+      #border-dashed { border: 1px dashed; background-color: #fff4e0; padding: 4px 12px; margin-bottom: 8px; }
+      #border-dotted { border: 1px dotted; background-color: #fffde0; padding: 4px 12px; margin-bottom: 8px; }
+      #border-double { border: 1px double; background-color: #eaffea; padding: 4px 12px; margin-bottom: 8px; }
+      #border-groove { border: 1px groove; background-color: #eaf2ff; padding: 4px 12px; margin-bottom: 8px; }
+
+      /* CSS: 부모에게 flex 지시 */
+      #flex-container {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      #box1, #box2, #box3 {
+        padding: 16px 24px;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+      }
+      #box1 { background-color: #e74c3c; }
+      #box2 { background-color: #3498db; }
+      #box3 { background-color: #2ecc71; }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-title">안녕하세요!</h1>
+
+    <div id="border-solid">
+      <h1>1</h1>
+    </div>
+    <div id="border-dashed">
+      <h2>2</h2>
+    </div>
+    <div id="border-dotted">
+      <h3>3</h3>
+    </div>
+    <div id="border-double">
+      <h4>4</h4>
+    </div>
+    <div id="border-groove">
+      <h5>5</h5>
+    </div>
+
+    <div id="flex-container">
+      <div id="box1">박스1</div>
+      <div id="box2">박스2</div>
+      <div id="box3">박스3</div>
+    </div>
+  </body>
+</html>
